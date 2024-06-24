@@ -1,7 +1,7 @@
 const CategoryScores = ({ scores }) => {
   return (
     <div className="flex flex-col items-center">
-      <h2>Current Scores</h2>
+      <h2>Current Scores test</h2>
       <ul className="flex gap-12">
         {Object.entries(scores).map(([category, score]) => (
           <li
