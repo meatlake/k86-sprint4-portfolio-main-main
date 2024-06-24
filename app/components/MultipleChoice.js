@@ -9,22 +9,30 @@ const MultipleChoice = ({ question, options, handleAnswer }) => {
   };
 
   return (
-    <div className="bg-bg-quiz px-12 h-[100vh] w-[100vw]">
-      <div className="lg:mt-24 flex flex-col lg:gap-12">
-        <p className="text-2xl font-bold">{question}</p>
-        <div className="grid grid-cols-2 gap-2">
-          {options.map((option, index) => (
-            <button
-              key={index}
-              className={`${
-                selected === option ? "selected" : ""
-              } border-white border-2 lg:h-[200px] lg:text-xl font-semibold`}
-              onClick={() => handleClick(option)}
-            >
-              {option}
-            </button>
-          ))}
-        </div>
+    <div className="flex flex-col pt-24">
+      <p>{question}</p>
+      <div className="grid grid-cols-2 gap-2 px-12">
+        {options.map((option, index) => (
+          <button
+            key={index}
+            className={`${
+              selected === option.value ? "selected" : ""
+            } border-white border-2 lg:h-[250px] lg:text-xl font-semibold`}
+            onClick={() => handleClick(option)}
+          >
+            {option.type === "text" ? (
+              option.value
+            ) : option.type === "image" ? (
+              <img
+                src={option.src}
+                alt={option.alt}
+                className="h-full object-cover w-full"
+              />
+            ) : (
+              <span>Invalid option type</span>
+            )}
+          </button>
+        ))}
       </div>
     </div>
   );
