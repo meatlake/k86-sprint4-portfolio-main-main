@@ -26,9 +26,9 @@ export default function Home() {
           <video
             id="introVideo"
             controls
-            className="lg:min-h-[100vh] object-cover h-[100vh]"
+            className="w-full object-cover h-[100vh]"
           >
-            <source src="/videos/RenderTestVideo.mp4" type="video/mp4" />
+            <source src="/videos/introVid.mp4" type="video/mp4" />
           </video>
         </div>
       )}
@@ -106,7 +106,7 @@ export default function Home() {
         >
           Slider
         </Link> */}
-              <div className="flex flex-col items-center lg:mt-12 mb-24 lg:mb-20 animate-bounce">
+              <div className="flex flex-col items-center mt-6 lg:mt-12 mb-24 lg:mb-20 animate-bounce">
                 <button
                   onClick={() =>
                     document
