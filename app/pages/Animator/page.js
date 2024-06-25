@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute right-0 bg-no-repeat bg-cover z-50">
+      <div className="absolute lg:top-0 top-24 right-0 bg-no-repeat bg-cover lg:z-50">
         <img
           src="/images/animatorBG.svg"
           className="w-32 lg:w-[600px]"

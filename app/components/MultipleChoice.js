@@ -26,7 +26,7 @@ const MultipleChoice = ({ question, options, handleAnswer }) => {
               <img
                 src={option.src}
                 alt={option.alt}
-                className="border-none h-full object-cover w-full"
+                className="border-none object-cover h-[150px] w-full"
               />
             ) : (
               <span>Invalid option type</span>

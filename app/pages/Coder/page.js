@@ -9,7 +9,7 @@ const page = () => {
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute right-0 bg-no-repeat bg-cover z-50">
+      <div className="absolute lg:top-0 top-24 right-0 bg-no-repeat bg-cover lg:z-50">
         <img
           src="/images/coderBG.svg"
           className="w-32 lg:w-[600px]"
@@ -40,7 +40,7 @@ const page = () => {
       </div>
       <div className="lg:grid grid-cols-2 flex flex-col gap-6 mt-[4rem] lg:mt-24">
         <div className="flex flex-col lg:grid grid-cols-1 gap-2">
-          <div className="bg-coderJulian1 bg-contain w-screen h-screen lg:w-[450px] lg:h-[800px] bg-no-repeat"></div>
+          <div className="bg-coderJulian1 bg-contain w-[100vw] h-screen lg:w-[450px] lg:h-[800px] bg-no-repeat"></div>
         </div>
         <div className="pl-4 lg:pl-12 flex flex-col gap-6">
           <h2 className="lg:text-3xl text-xl font-semibold">

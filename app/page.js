@@ -35,7 +35,7 @@ export default function Home() {
       {videoEnded && (
         <div id="droomboom" className="flex flex-col w-[100vw]">
           <div className="relative top-0 left-0 flex flex-col justify-end lg:px-5 items-center h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
-            <div className="absolute top-12 lg:top-0 mt-[350px] lg:mt-[200px] lg:px-6 flex gap-2 lg:gap-6 justify-center items-center">
+            <div className="absolute -top-24 lg:top-0 mt-[350px] lg:mt-[200px] lg:px-6 flex gap-2 lg:gap-6 justify-center items-center">
               <Link
                 href="/pages/Coder"
                 className="flex flex-col justify-center items-center"

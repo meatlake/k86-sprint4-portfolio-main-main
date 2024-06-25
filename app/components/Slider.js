@@ -14,8 +14,8 @@ const Slider = ({ question, handleAnswer }) => {
   };
 
   return (
-    <div className="bg-bg-slider bg-cover bg-no-repeat flex flex-col items-center justify-center h-[100vh] w-[100vw]">
-      <p className="text-2xl font-semibold">{question}</p>
+    <div className="bg-bg-slider bg-cover bg-right bg-no-repeat flex flex-col items-center gap-12 lg:gap-0s px-6 lg:px-0 justify-center h-[100vh] w-[100vw]">
+      <p className="text-2xl mt-32 lg:mt-0 font-semibold">{question}</p>
       <input
         id="slider"
         type="range"
@@ -26,11 +26,11 @@ const Slider = ({ question, handleAnswer }) => {
         onChange={handleChange}
         className="appearance-none forced-colors:appearance-auto w-full lg:w-[1000px] lg:mt-24 h-1 rounded-full"
       />
-      <div className="mt-24 text-2xl font-semibold">
+      <div className="mt-12 lg:mt-24 text-2xl font-semibold">
         {["Volledig mee eens", "Eens", "Oneens", "Volledig mee oneens"][value]}
       </div>
       <button
-        className="border-2 text-xl font-medium border-transparent bg-white text-black px-4 py-2 hover:border-white hover:bg-black hover:text-white transition-all duration-200 ease-in-out mt-12"
+        className="border-2 text-xl font-medium border-transparent bg-white text-black px-4 py-2 hover:border-white hover:bg-black hover:text-white transition-all duration-200 ease-in-out lg:mt-12"
         onClick={handleSubmit}
       >
         Submit
