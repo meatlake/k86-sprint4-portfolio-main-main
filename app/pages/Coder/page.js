@@ -9,11 +9,11 @@ const page = () => {
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute right-2 top-[100px] bg-no-repeat bg-cover">
+      <div className="absolute right-0 bg-no-repeat bg-cover z-50">
         <img
-          src="/images/developerPortfolio.png"
+          src="/images/coderBG.svg"
           className="w-32 lg:w-[600px]"
-          alt="developer icon"
+          alt="vormgeving icon"
         />
       </div>
       <div className="mt-32">
@@ -83,7 +83,32 @@ const page = () => {
         <img src="/images/coderJulian2.png" alt="code screenshot" />
       </div>
       <div className="lg:hidden w-full h-[2px] bg-slate-500 my-12"></div>
-      <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4"></div>
+      <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">
+        <div className="flex flex-col gap-6 pr-12">
+          <h2 className="lg:text-3xl text-xl font-semibold">
+            Project van Julian
+          </h2>
+          <p className="lg:text-xl text-md">
+            React is 1 van de populairste Javascript frameworks die er op het
+            moment zijn. Deze wordt op een groot aantal websites van grote
+            bedrijven gebruikt door zijn snelle laadtijden en makkelijk
+            aanpasbare functies. De website waarop je nu aan navigeren bent is
+            ook gebouwd met React.
+          </p>
+          <p className="lg:text-xl text-sm">
+            Doormiddel van verschillende tutorials heb ik geleerd hoe ik een
+            simpele character moet ontwerpen. Ik ben begonnen met twee
+            aanzichten van de character op twee verschillende assen. Hieruit heb
+            ik de character 3d gevormd vanaf twee kanten. Met behulp van veel
+            verschillende tools in blender heb ik de volledige character gevormd
+            en deze ook een skelet mee gegeven waardoor simpele animatie
+            mogelijk is.
+          </p>
+        </div>
+        <div className="mt-4 lg:mt-0">
+          <img src="/images/coderJ2.png" alt="image Julian" />
+        </div>
+      </div>
       <div className="h-32"></div>
     </div>
   );

@@ -20,22 +20,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       {!videoEnded && (
         <div>
           <video
             id="introVideo"
             controls
-            className="lg:min-w-full lg:min-h-full w-auto h-auto"
+            className="lg:min-h-[100vh] object-cover h-[100vh]"
           >
             <source src="/videos/RenderTestVideo.mp4" type="video/mp4" />
           </video>
         </div>
       )}
       {videoEnded && (
-        <div id="droomboom" className="flex flex-col ">
-          <div className="relative top-0 left-0 flex flex-col justify-end px-5 items-center w-full h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
-            <div className="absolute top-12 lg:top-0 mt-[350px] lg:mt-[200px] w-screen px-6 flex gap-6 justify-center items-center">
+        <div id="droomboom" className="flex flex-col w-[100vw]">
+          <div className="relative top-0 left-0 flex flex-col justify-end lg:px-5 items-center h-screen bg-bg-image bg-cover bg-bottom bg-no-repeat">
+            <div className="absolute top-12 lg:top-0 mt-[350px] lg:mt-[200px] lg:px-6 flex gap-2 lg:gap-6 justify-center items-center">
               <Link
                 href="/pages/Coder"
                 className="flex flex-col justify-center items-center"
@@ -106,7 +106,7 @@ export default function Home() {
         >
           Slider
         </Link> */}
-              <div className="flex flex-col items-center lg:mt-12 mb-24 lg:mb-20">
+              <div className="flex flex-col items-center lg:mt-12 mb-24 lg:mb-20 animate-bounce">
                 <button
                   onClick={() =>
                     document
@@ -140,8 +140,8 @@ export default function Home() {
                 <Image
                   src="/images/about-us-bg.svg"
                   alt="about us blobjes"
-                  width="100"
-                  height="100"
+                  width="80"
+                  height="80"
                   className="w-[600px] h-full pl-6 lg:pl-0 lg:mt-0 mt-12"
                 />
               </div>
@@ -188,7 +188,7 @@ export default function Home() {
                 className="w-[200px] lg:w-[300px] self-end"
               />
             </div>
-            <div className="px-12 flex flex-col gap-12 lg:px-[350px]">
+            <div className="flex flex-col gap-12 px-4 lg:px-[350px]">
               <p className="text-center text-xl lg:text-xl font-medium">
                 Deze minor heeft ons geïnspireerd om nieuwe dingen te leren
                 binnen het vak van UX design. En we hopen jou ook met deze quiz
@@ -199,7 +199,69 @@ export default function Home() {
                 op een van de karakters in de droomboom om naar de project
                 pagina&apos;s te navigeren.
               </p>
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-wrap lg:flex-nowrap justify-center gap-2 lg:gap-6 mt-8">
+                <button>
+                  <Link className="flex flex-col gap-4" href="/pages/3DArtiest">
+                    <img
+                      className="lg:max-h-full max-h-[80px]"
+                      src="/images/aboutIcons/femkeIcon.svg"
+                      alt="3d icon"
+                    />
+                    <div>
+                      <p className="lg:text-xl text-md font-semibold">
+                        Femke Edeling
+                      </p>
+                      <p className="text-sm lg:text-lg">21053367</p>
+                    </div>
+                  </Link>
+                </button>
+                <button>
+                  <Link className="flex flex-col gap-4" href="/pages/Vormgever">
+                    <img
+                      className="lg:max-h-full max-h-[80px]"
+                      src="/images/aboutIcons/kevinIcon.svg"
+                      alt="3d icon"
+                    />
+                    <div>
+                      <p className="lg:text-xl text-md font-semibold">
+                        Kevin Scheffer
+                      </p>
+                      <p className="text-sm lg:text-lg">21151032</p>
+                    </div>
+                  </Link>
+                </button>
+                <button>
+                  <Link className="flex flex-col gap-4" href="/pages/Animator">
+                    <img
+                      className="lg:max-h-full max-h-[80px]"
+                      src="/images/aboutIcons/damianIcon.svg"
+                      alt="3d icon"
+                    />
+                    <div>
+                      <p className="lg:text-xl text-md font-semibold">
+                        Damian van Tol
+                      </p>
+                      <p className="text-sm lg:text-lg">21107548</p>
+                    </div>
+                  </Link>
+                </button>
+                <button>
+                  <Link className="flex flex-col gap-4" href="/pages/Coder">
+                    <img
+                      className="lg:max-h-full max-h-[80px]"
+                      src="/images/aboutIcons/julianIcon.svg"
+                      alt="3d icon"
+                    />
+                    <div>
+                      <p className="lg:text-xl text-md font-semibold">
+                        Julian Vleesenbeek
+                      </p>
+                      <p className="text-sm lg:text-lg">21066337</p>
+                    </div>
+                  </Link>
+                </button>
+              </div>
+              <div className="flex flex-col justify-center items-center mt-8">
                 <button
                   onClick={() =>
                     document

@@ -6,7 +6,7 @@ export const categories = [
     category: "Coder",
   },
   {
-    category: "3D artist",
+    category: "3DArtiest",
   },
   {
     category: "Animator",

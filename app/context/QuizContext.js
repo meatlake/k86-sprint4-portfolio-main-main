@@ -7,7 +7,7 @@ export const QuizProvider = ({ children }) => {
   const [scores, setScores] = useState({
     coder: 0,
     animator: 0,
-    artist: 0,
+    "3DArtiest": 0,
     vormgever: 0,
   });
 

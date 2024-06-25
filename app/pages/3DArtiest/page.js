@@ -10,11 +10,11 @@ const page = () => {
   return (
     <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute right-2 top-[100px] bg-no-repeat bg-cover">
+      <div className="absolute right-0 bg-no-repeat bg-cover z-50">
         <img
-          src="/images/3dartistPortfolio.png"
+          src="/images/3dartiestBG.svg"
           className="w-32 lg:w-[600px]"
-          alt="3d artist icon"
+          alt="vormgeving icon"
         />
       </div>
       <div className="mt-32">
@@ -78,34 +78,47 @@ const page = () => {
       <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">
         <div className="flex flex-col gap-6 pr-12">
           <h2 className="lg:text-3xl text-xl font-semibold">
-            Project van Kevin
+            Project van Damian
           </h2>
           <p className="lg:text-xl text-md">
-            In Sprint 1 ben ik aan de slag gegaan met Spline, dit is een 3D
-            modelleringstool die je makkelijk kunt integreren met verschillende
-            websitebouwers. Deze modellen kun je gebruiken om de ervaring op je
-            website te verbeteren en tekst te ondersteunen met visualiteit. Je
-            kunt bijvoorbeeld een 3d ontwerp maken van het product dat je
-            verkoopt en deze interactief maken. Zo kunnen gebruikers het object
-            draaien en erop inzoomen om zo het product van dichtbij te kunnen
-            zien.
+            Voor deze minor ben ik in het eerste blok van 5 weken bezig geweest
+            met modelleren in blender. Mijn originele plan was om iets met
+            muziek te doen en het kwam in mij op om een visual te maken. Dit was
+            uiteindelijk ver gegrepen en moeilijk iets op te bedenken om aan te
+            leveren aan het einde van het blok. Uiteindelijk heb ik daarom
+            gekozen om het te houden bij het modelleren van een character.
           </p>
           <p className="lg:text-xl text-sm">
-            Het idee is een guerilla campagne. Levensgrote kaarten met daarop
-            een inspirerende vraag worden verspreid door klaslokalen over
-            diverse Hogeschool panden. Met als doel de docent in gesprek te
-            krijgen over onderwijsinnovatie. Voordat je een merk echt bekend kan
-            maken moet je de doelgroep affiniteit laten voelen met het
-            onderwerp. In dit geval onderwijs innovatie. Deze innovatie is
-            bedoeld voor de (toekomstige) studenten. Maar moet juist vaak
-            gerealiseerd worden door docenten en medewerkers van de Haagse
-            Hogeschool. Daarom is dit gesprek zo belangrijk. Het laat het
-            onderwerp leven, innitieert gezonde discussie en vergroot daarmee de
-            bekendheid van HINT.
+            Doormiddel van verschillende tutorials heb ik geleerd hoe ik een
+            simpele character moet ontwerpen. Ik ben begonnen met twee
+            aanzichten van de character op twee verschillende assen. Hieruit heb
+            ik de character 3d gevormd vanaf twee kanten. Met behulp van veel
+            verschillende tools in blender heb ik de volledige character gevormd
+            en deze ook een skelet mee gegeven waardoor simpele animatie
+            mogelijk is.
           </p>
         </div>
-        <div className="mt-4 lg:mt-0">
-          <img src="/images/kevinVorm1.png" alt="image Kevin" />
+        <div className="mt-4 lg:mt-0 grid grid-cols-3 gap-2">
+          <img
+            className="lg:h-[200px] w-full object-cover col-span-1"
+            src="/images/kevinVorm1.png"
+            alt="image Kevin"
+          />
+          <img
+            className="lg:h-[200px] w-full object-cover col-span-2"
+            src="/images/kevinVorm1.png"
+            alt="image Kevin"
+          />
+          <img
+            className="lg:h-[200px] w-full object-cover col-span-2"
+            src="/images/kevinVorm1.png"
+            alt="image Kevin"
+          />
+          <img
+            className="lg:h-[200px] w-full object-cover col-span-1"
+            src="/images/kevinVorm1.png"
+            alt="image Kevin"
+          />
         </div>
       </div>
       <div className="h-32"></div>

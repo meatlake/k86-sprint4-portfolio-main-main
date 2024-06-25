@@ -14,7 +14,7 @@ const Slider = ({ question, handleAnswer }) => {
   };
 
   return (
-    <div className="bg-bg-slider flex flex-col items-center justify-center h-[100vh] w-[100vw]">
+    <div className="bg-bg-slider bg-cover bg-no-repeat flex flex-col items-center justify-center h-[100vh] w-[100vw]">
       <p className="text-2xl font-semibold">{question}</p>
       <input
         id="slider"

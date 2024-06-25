@@ -24,7 +24,7 @@ const questions = [
           "Ik word enthousiast van het tot leven brengen van ontwerpen met beweging.",
       },
     ],
-    category: ["Coder", "3D Artiest", "Vormgever", "Animator"],
+    category: ["Coder", "3DArtiest", "Vormgever", "Animator"],
   },
   {
     type: "slider",
@@ -43,7 +43,7 @@ const questions = [
       },
       { type: "text", value: "Timing, beweging, en visuele effecten." },
     ],
-    category: ["Coder", "3D Artiest", "Vormgever", "Animator"],
+    category: ["Coder", "3DArtiest", "Vormgever", "Animator"],
   },
   {
     type: "slider",
@@ -59,7 +59,7 @@ const questions = [
       { type: "image", src: "/images/vormgevingImg.png" },
       { type: "image", src: "/images/animatieImg.png" },
     ],
-    category: ["Coder", "3D Artiest", "Vormgever", "Animator"],
+    category: ["Coder", "3DArtiest", "Vormgever", "Animator"],
   },
   {
     type: "slider",
@@ -75,7 +75,7 @@ const questions = [
       { type: "image", src: "/images/vormgevingImg2.png" },
       { type: "image", src: "/images/animatieImg2.png" },
     ],
-    category: ["Coder", "3D Artiest", "Vormgever", "Animator"],
+    category: ["Coder", "3DArtiest", "Vormgever", "Animator"],
   },
   {
     type: "slider",
