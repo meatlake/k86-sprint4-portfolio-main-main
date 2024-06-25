@@ -5,10 +5,10 @@ import Link from "next/link";
 const BeginButton = () => {
   return (
     <Link
-      className="mt-8 px-20 py-3 min-w-[250px] text-center bg-black rounded-lg text-2xl text-white font-semibold hover:text-black hover:bg-white transition-colors duration-200 ease-in-out"
+      className="mt-8 mx-6 px-2 lg:px-12 py-4 text-center bg-black rounded-lg text-2xl text-white font-semibold hover:text-black hover:bg-white transition-colors duration-200 ease-in-out"
       href="/question"
     >
-      Doe de quiz
+      Kom achter jouw UX specialisme!
     </Link>
   );
 };
