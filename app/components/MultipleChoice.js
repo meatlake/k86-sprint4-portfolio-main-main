@@ -9,8 +9,8 @@ const MultipleChoice = ({ question, options, handleAnswer }) => {
   };
 
   return (
-    <div className="flex flex-col pt-24 bg-bg-quiz h-[100vh]">
-      <p className="text-2xl px-4 lg:px-0 font-semibold mb-24">{question}</p>
+    <div className="flex flex-col pt-24 bg-bg-quiz h-[100vh] pb-12">
+      <p className="lg:text-2xl px-4 lg:px-0 font-semibold mb-12">{question}</p>
       <div className="lg:grid grid-cols-2 lg:gap-2 flex flex-col gap-4 px-4 lg:px-12">
         {options.map((option, index) => (
           <button
