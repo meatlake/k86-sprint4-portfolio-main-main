@@ -34,12 +34,12 @@ export default function Home() {
       {!videoEnded && (
         <div>
           <video
-            key={screenWidth > 850 ? "desktop" : "mobile"}
+            key={screenWidth > 1000 ? "desktop" : "mobile"}
             id="introVideo"
             controls
             className="w-full object-cover h-[100vh]"
           >
-            {screenWidth > 850 ? (
+            {screenWidth > 1000 ? (
               <source src="/videos/introVid.mp4" type="video/mp4" />
             ) : (
               <source src="/videos/introVidMobile.mp4" type="video/mp4" />
