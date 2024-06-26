@@ -27,7 +27,7 @@ const Slider = ({ question, handleAnswer }) => {
         className="appearance-none forced-colors:appearance-auto w-full lg:w-[1000px] lg:mt-24 h-1 rounded-full"
       />
       <div className="mt-12 lg:mt-24 text-2xl font-semibold">
-        {["Volledig mee eens", "Eens", "Oneens", "Volledig mee oneens"][value]}
+        {["Volledig mee oneens", "Oneens", "Eens", "Volledig mee eens"][value]}
       </div>
       <button
         className=" text-xl font-medium border-transparent rounded-full bg-gradient-to-r from-[#FF9701] to-[#FF15A3] via-[#FF3E31] text-white px-6 py-2  hover:text-black transition-all duration-200 ease-in-out lg:mt-12"

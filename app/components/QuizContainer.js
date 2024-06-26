@@ -25,22 +25,22 @@ const QuizContainer = () => {
         [category[selectedIndex]]: prevScores[category[selectedIndex]] + 1,
       }));
     } else if (question.type === "slider") {
-      if (currentQuestion === 1 && answer === 0) {
+      if (currentQuestion === 1 && answer === 3) {
         setScores((prevScores) => ({
           ...prevScores,
           Coder: prevScores["Coder"] + 1,
         }));
-      } else if (currentQuestion === 3 && answer === 0) {
+      } else if (currentQuestion === 3 && answer === 3) {
         setScores((prevScores) => ({
           ...prevScores,
           Animator: prevScores["Animator"] + 1,
         }));
-      } else if (currentQuestion === 5 && answer === 0) {
+      } else if (currentQuestion === 5 && answer === 3) {
         setScores((prevScores) => ({
           ...prevScores,
           Vormgever: prevScores["Vormgever"] + 1,
         }));
-      } else if (currentQuestion === 7 && answer === 0) {
+      } else if (currentQuestion === 7 && answer === 3) {
         setScores((prevScores) => ({
           ...prevScores,
           "3DArtiest": prevScores["3DArtiest"] + 1,
