@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div className="bg-black absolute top-0 left-0 w-full h-full text-white">
       <NavBar />
-      <div className="absolute lg:top-0 top-24 right-0 bg-no-repeat bg-cover lg:z-50">
+      <div className="absolute lg:top-0 top-12 right-0 bg-no-repeat bg-cover">
         <img
           src="/images/3dartiestBG.svg"
           className="w-32 lg:w-[600px]"

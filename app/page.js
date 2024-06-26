@@ -219,7 +219,7 @@ export default function Home() {
                 <button>
                   <Link className="flex flex-col gap-4" href="/pages/3DArtiest">
                     <img
-                      className="lg:max-h-full max-h-[80px]"
+                      className="h-[100px]"
                       src="/images/aboutIcons/femkeIcon.svg"
                       alt="3d icon"
                     />
@@ -234,7 +234,7 @@ export default function Home() {
                 <button>
                   <Link className="flex flex-col gap-4" href="/pages/Vormgever">
                     <img
-                      className="lg:max-h-full max-h-[80px]"
+                      className="h-[100px]"
                       src="/images/aboutIcons/kevinIcon.svg"
                       alt="3d icon"
                     />
@@ -249,7 +249,7 @@ export default function Home() {
                 <button>
                   <Link className="flex flex-col gap-4" href="/pages/Animator">
                     <img
-                      className="lg:max-h-full max-h-[80px]"
+                      className="h-[100px]"
                       src="/images/aboutIcons/damianIcon.svg"
                       alt="3d icon"
                     />
@@ -264,7 +264,7 @@ export default function Home() {
                 <button>
                   <Link className="flex flex-col gap-4" href="/pages/Coder">
                     <img
-                      className="lg:max-h-full max-h-[80px]"
+                      className="h-[100px]"
                       src="/images/aboutIcons/julianIcon.svg"
                       alt="3d icon"
                     />
