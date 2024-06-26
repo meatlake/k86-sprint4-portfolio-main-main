@@ -3,12 +3,13 @@ import QuitButton from "@/app/components/QuitButton";
 import { portfolioInfo } from "@/app/portfolioInfo";
 import PortfolioButtons from "@/app/components/PortfolioButtons";
 import NavBar from "@/app/components/NavBar";
+import PortfolioFooter from "@/app/components/PortfolioFooter";
 
 const page = () => {
   const portfolioNumber = 2;
 
   return (
-    <div className="bg-black absolute px-4 lg:px-32 top-0 left-0 w-full h-full text-white">
+    <div className="bg-black absolute top-0 left-0 w-full h-full text-white">
       <NavBar />
       <div className="absolute lg:top-0 top-24 right-0 bg-no-repeat bg-cover lg:z-50">
         <img
@@ -17,7 +18,7 @@ const page = () => {
           alt="vormgeving icon"
         />
       </div>
-      <div className="mt-32">
+      <div className="mt-32 px-4 lg:px-32">
         <div className="flex flex-col gap-1 lg:gap-4">
           <h3 className="text-2xl">Jouw UX talent is</h3>
           <h1
@@ -31,7 +32,7 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="flex text-center lg:gap-12 justify-center items-center mt-[4rem] lg:mt-[150px]">
+      <div className="flex text-center lg:gap-12 px-4 lg:px-32 justify-center items-center mt-[4rem] lg:mt-[150px]">
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
         <h2 className="text-md px-12 lg:text-2xl">
           Vind hier {portfolioInfo[portfolioNumber].title} UX inspiratie voor je
@@ -39,7 +40,7 @@ const page = () => {
         </h2>
         <p className="rotate-90 lg:text-2xl">&rarr;</p>
       </div>
-      <div className="grid grid-cols-2 mt-[4rem] lg:mt-24">
+      <div className="lg:grid grid-cols-2 mt-[4rem] lg:mt-24 px-4 lg:px-32">
         <div className="flex flex-col lg:grid grid-cols-2 gap-2">
           <video width="400" height="700" controls>
             <source src="/videos/animatieKevinVid2.mp4" type="video/mp4" />
@@ -72,13 +73,13 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="mt-12 lg:h-full w-full">
+      <div className="mt-12 lg:h-full w-full px-4 lg:px-32">
         <video width="full" height="700" controls>
           <source src="/videos/animatieKevinVid3.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="lg:hidden w-full h-[2px] bg-slate-500 my-12"></div>
-      <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">
+      <div className="mt-12 flex flex-col lg:grid lg:grid-cols-2 lg:gap-4 px-4 lg:px-32">
         <div className="flex flex-col gap-6 pr-12">
           <h2 className="lg:text-3xl text-xl font-semibold">
             Project van Damian
@@ -110,7 +111,7 @@ const page = () => {
           </video>
         </div>
       </div>
-      <div className="h-32"></div>
+      <PortfolioFooter />
     </div>
   );
 };
