@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [videoEnded, setVideoEnded] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(null);
+  // const [screenWidth, setScreenWidth] = useState(null);
 
   useEffect(() => {
     setVideoEnded(sessionStorage.getItem("videoEnded") === "true");
@@ -19,14 +19,14 @@ export default function Home() {
       setVideoEnded(true);
     };
 
-    const updateScreenWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
+    // const updateScreenWidth = () => {
+    //   setScreenWidth(window.innerWidth);
+    // };
 
-    updateScreenWidth();
-    window.addEventListener("resize", updateScreenWidth);
+    // updateScreenWidth();
+    // window.addEventListener("resize", updateScreenWidth);
 
-    return () => window.removeEventListener("resize", updateScreenWidth);
+    // return () => window.removeEventListener("resize", updateScreenWidth);
   }, []);
 
   return (
@@ -34,16 +34,17 @@ export default function Home() {
       {!videoEnded && (
         <div>
           <video
-            key={screenWidth > 1000 ? "desktop" : "mobile"}
+            // key={screenWidth > 1000 ? "desktop" : "mobile"}
             id="introVideo"
             controls
             className="w-full object-cover h-[100vh]"
           >
-            {screenWidth > 1000 ? (
-              <source src="/videos/introVid.mp4" type="video/mp4" />
+            <source src="/videos/introVid.mp4" type="video/mp4" />
+            {/* {screenWidth > 1000 ? (
+              
             ) : (
               <source src="/videos/introVidMobile.mp4" type="video/mp4" />
-            )}
+            )} */}
           </video>
         </div>
       )}
