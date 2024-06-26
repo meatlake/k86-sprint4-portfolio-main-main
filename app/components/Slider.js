@@ -30,10 +30,10 @@ const Slider = ({ question, handleAnswer }) => {
         {["Volledig mee eens", "Eens", "Oneens", "Volledig mee oneens"][value]}
       </div>
       <button
-        className="border-2 text-xl font-medium border-transparent bg-white text-black px-4 py-2 hover:border-white hover:bg-black hover:text-white transition-all duration-200 ease-in-out lg:mt-12"
+        className=" text-xl font-medium border-transparent rounded-full bg-gradient-to-r from-[#FF9701] to-[#FF15A3] via-[#FF3E31] text-white px-6 py-2  hover:text-black transition-all duration-200 ease-in-out lg:mt-12"
         onClick={handleSubmit}
       >
-        Submit
+        Volgende
       </button>
     </div>
   );

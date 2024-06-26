@@ -30,6 +30,9 @@ const questions = [
     type: "slider",
     question: "Ik vind het leuk om te puzzels op te lossen",
     category: "Coder",
+    min: 0,
+    max: 3,
+    answer: null,
   },
   {
     type: "multiple-choice",
@@ -49,6 +52,9 @@ const questions = [
     type: "slider",
     question: "Ik vind het leuk om muziek te maken",
     category: "Coder",
+    min: 0,
+    max: 3,
+    answer: null,
   },
   {
     type: "multiple-choice",
@@ -65,6 +71,9 @@ const questions = [
     type: "slider",
     question: "Ik vind het leuk om te tekenen en schilderen",
     category: "Coder",
+    min: 0,
+    max: 3,
+    answer: null,
   },
   {
     type: "multiple-choice",
@@ -81,6 +90,9 @@ const questions = [
     type: "slider",
     question: "Ik vind het leuk om te boetseren",
     category: "Coder",
+    min: 0,
+    max: 3,
+    answer: null,
   },
 ];
 

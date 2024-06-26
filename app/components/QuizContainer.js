@@ -25,12 +25,27 @@ const QuizContainer = () => {
         [category[selectedIndex]]: prevScores[category[selectedIndex]] + 1,
       }));
     } else if (question.type === "slider") {
-      const categories = ["Coder", "3DArtiest", "Vormgever", "Animator"];
-      const selectedCategory = categories[answer];
-      setScores((prevScores) => ({
-        ...prevScores,
-        [selectedCategory]: prevScores[selectedCategory] + 1,
-      }));
+      if (currentQuestion === 1 && answer === 0) {
+        setScores((prevScores) => ({
+          ...prevScores,
+          Coder: prevScores["Coder"] + 1,
+        }));
+      } else if (currentQuestion === 3 && answer === 0) {
+        setScores((prevScores) => ({
+          ...prevScores,
+          Animator: prevScores["Animator"] + 1,
+        }));
+      } else if (currentQuestion === 5 && answer === 0) {
+        setScores((prevScores) => ({
+          ...prevScores,
+          Vormgever: prevScores["Vormgever"] + 1,
+        }));
+      } else if (currentQuestion === 7 && answer === 0) {
+        setScores((prevScores) => ({
+          ...prevScores,
+          "3DArtiest": prevScores["3DArtiest"] + 1,
+        }));
+      }
     }
 
     if (currentQuestion < questions.length - 1) {
@@ -51,6 +66,9 @@ const QuizContainer = () => {
 
   return (
     <div className="flex flex-col gap-12 text-center">
+      <h1 className="absolute right-4 top-2 text-xl font-semibold">
+        Vraag {currentQuestion + 1}
+      </h1>
       {question.type === "multiple-choice" ? (
         <MultipleChoice
           question={question.question}
