@@ -273,7 +273,7 @@ export default function Home() {
                     Terug naar boven
                   </h2>
                 </button>
-                <button
+                {/* <button
                   className="text-black font-bold flex items-center mt-4 gap-2 text-center mx-auto"
                   onClick={() => location.reload()}
                 >
@@ -281,7 +281,7 @@ export default function Home() {
                   <span>
                     <img className="w-[20px]" src="/images/reload.svg" />
                   </span>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

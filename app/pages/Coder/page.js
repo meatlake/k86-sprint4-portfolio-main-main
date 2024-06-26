@@ -16,11 +16,11 @@ const page = () => {
           alt="vormgeving icon"
         />
       </div>
-      <div className="mt-32 px-4 lg:px-32">
+      <div className="lg:mt-32 mt-40 px-4 lg:px-32">
         <div className="flex flex-col gap-1 lg:gap-4">
-          <h3 className="text-2xl">Jouw UX talent is</h3>
+          <h3 className="lg:text-2xl text-xl">Jouw UX talent is</h3>
           <h1
-            className="text-6xl lg:text-[5rem] font-bold"
+            className="text-5xl lg:text-[5rem] font-bold"
             style={{ color: portfolioInfo[portfolioNumber].color }}
           >
             {portfolioInfo[portfolioNumber].title}
@@ -96,11 +96,14 @@ const page = () => {
             ook gebouwd met React.
           </p>
           <p className="lg:text-xl text-sm">
-            Doormiddel van tutorials en het bouwen van een aantal kleine
-            websites heb ik geleerd om deze codeertaal te beheersen en nu ook
-            deze website te kunnen maken. React is in principe een Javascript
-            gebasseerde taal waarmee je Javascript in je HTML kunt schrijven,
-            dit zorgt voor een simpele en overzichtelijkere code.
+            Tijdens dit project heb ik me bezig gehouden met het bouwen van
+            websites met interactie. Zo heb ik een website gemaakt die met
+            behulp van data het weer op een opgevraagde locatie laat zien. Deze
+            data wordt opgehaald van een server op het internet en op mijn
+            manier weergegeven. Ook heb ik gewerkt met dynamische content,
+            hierbij moet je zorgen dat wat de tekst of afbeelding ook is, deze
+            goed wordt weergegeven op je website. Dit heb ik gedaan met onder
+            andere CSS, één van de meestgebruikte codeertalen op het internet.
           </p>
         </div>
         <div className=" flex flex-col gap-2 mt-4 lg:mt-0">

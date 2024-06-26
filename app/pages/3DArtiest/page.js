@@ -18,11 +18,11 @@ const page = () => {
           alt="vormgeving icon"
         />
       </div>
-      <div className="mt-32 px-4 lg:px-32">
+      <div className="lg:mt-32 mt-40 px-4 lg:px-32">
         <div className="flex flex-col gap-1 lg:gap-4">
-          <h3 className="text-2xl">Jouw UX talent is</h3>
+          <h3 className="text-xl lg:text-2xl">Jouw UX talent is</h3>
           <h1
-            className="text-6xl lg:text-[5rem] font-bold"
+            className="text-5xl lg:text-[5rem] font-bold"
             style={{ color: portfolioInfo[portfolioNumber].color }}
           >
             {portfolioInfo[portfolioNumber].title}
