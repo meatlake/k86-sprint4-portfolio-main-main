@@ -188,7 +188,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative flex flex-col bg-bg-sterren w-full h-screen bg-no-repeat bg-cover bg-center mt-32">
+            <div className="relative flex flex-col bg-bg-sterren w-full h-full bg-no-repeat bg-cover bg-bottom mt-32">
               <Image
                 src="/images/blobRozeAbout.svg"
                 alt="blob roze"

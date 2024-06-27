@@ -73,7 +73,7 @@ module.exports = {
       },
       backgroundImage: {
         "bg-image": "url('../public/images/bgHome.svg')",
-        "bg-sterren": "url('/images/Sterren.svg')",
+        "bg-sterren": "url('/images/bgMidden.png')",
         "bg-slider": "url('../public/images/bgQuiz.svg')",
         "bg-quiz": "url('../public/images/sliderBg.svg')",
         vormgevingFemke1: "url('/images/fruit.jpg')",
