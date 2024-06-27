@@ -78,7 +78,7 @@ const QuizContainer = () => {
       ) : (
         <Slider question={question.question} handleAnswer={handleAnswer} />
       )}
-      <CategoryScores scores={scores} />
+      {/* <CategoryScores scores={scores} /> */}
     </div>
   );
 };
